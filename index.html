@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your website description here" />
+    <meta name="author" content="Your name here" />
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to your CSS file -->
+    <script src="script.js" defer></script>
+    <!-- Link to your JavaScript file (defer ensures it's executed after the HTML is parsed) -->
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#" data-testid="slackUserName" class="logo">@cariebi</a>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">ABOUT</a>
+            <a href="#">Services</a>
+            <a data-testid="githubURL" href="https://github.com/">GitHub Link</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="right-icons">
+            <input type="text" class="search-bar" placeholder="Search" />
+            <div class="notification-icon">🔔</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-div">
+            <div class="profile">
+                <p>
+                    Hi, I am a <b data-testid="myTrack">Frontend Developer</b> with a passion for crafting exceptional web experiences.
+                </p>
+                <ul>
+                    <li id="skills">Skills</li>
+                    <li>HTML</li>
+                    <li>CSS5</li>
+                    <li>JAVASCRIPT</li>
+                    <li>REACT</li>
+                    <li>TAILWIND CSS</li>
+                    <li>GIT</li>
+                    <li>NEXT.JS</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img data-testid="slackDisplayImage" src="images/image-1.jpg" alt="Cariebi" width="100%" />
+                <p class="image-caption">contact email: doyinapollos@gmail.com</p>
+            </div>
+            <div data-testid="currentDayOfTheWeek" class="current-time">
+                <p id="time" data-testid="currentUTCTime"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 cariebi. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
